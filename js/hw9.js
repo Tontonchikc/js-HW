@@ -30,8 +30,10 @@ logItems(['Mango', 'Kivi', 'Ball']);
 //вивести результат в консоль
 
 function calculateEngravingPrice(message, pricePerWord) {
+const arrayMesage = message.split(" ")
 
 }
+
 
 
 
@@ -48,27 +50,27 @@ calculateEngravingPrice(5);
 //При знаходжені нового найдовшого числа заміняти минуле найдовше
 //Вивести результат в конслоль
 
-function findLongestWord(string) {
-
-}
-
-
-findLongestWord("String Number Boolean")
-
-
-
-// let formatsString;
-
-// function formatString(string) {
-//     if (formatsString.lenght < 40) {
-//         console.log(formatsString)
-//     }
-//     else { console.log(formatsString.slice(39, 99999999999, "...")) }
+// function findLongestWord(string) {
 
 // }
 
 
+// findLongestWord("String Number Boolean")
 
-// formatsString = formatString("Hello my names Anton,I am from Kiyv bla bla bla");
+
+
+// // let formatsString;
+
+// // function formatString(string) {
+// //     if (formatsString.lenght < 40) {
+// //         console.log(formatsString)
+// //     }
+// //     else { console.log(formatsString.slice(39, 99999999999, "...")) }
+
+// // }
+
+
+
+// // formatsString = formatString("Hello my names Anton,I am from Kiyv bla bla bla");
 
 
