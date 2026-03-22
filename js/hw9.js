@@ -1,76 +1,65 @@
-// Напиши функцію logItems(array), яка отримує масив і використовує цикл for, який для кожного елемента масиву буде виводити в консоль повідомлення в форматі [номер елемента] - [значення елемента]. Нумерація повинна починатися з 1. Наприклад, для першого елемента масиву ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено '1 - Mango', а для індексу 2 виведе '3 - Ajax'.
-
-//створити функцію 
-//створити масив з іменами
-//створити цикл у функції котрий буде перераховувати елементи масиву
-//в консоль лог прописати код щоб він додавав до масиву плю одне число щоб перший нмер був не нулем
-//вивести в консоль результат
-
-
-
-
 function logItems(array) {
-    for (let i = 0; i < array.length; i++) {
-        console.log(`${i + 1} - ${array[i]}`);
+  for (let i = 0; i < array.length; i++) {
+    console.log(`${i + 1} - ${array[i]}`);
+  }
+}
+
+logItems(["Mango", "Kivi", "Ball"]);
+
+
+
+
+
+
+let sum = 0;
+
+function calculateEngravingPrice(message, pricePerLetter) {
+  for (let i = 0; i < message.length; i++) {
+    if (message[i] !== " ") {
+      sum += pricePerLetter;
     }
+  }
+
+  return sum;
 }
 
-
-logItems(['Mango', 'Kivi', 'Ball']);
-
+console.log(calculateEngravingPrice("Anton Sasha Misha", 5));
 
 
-// Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
 
-//Створити функцію
-//Створити рядок з іменами
-//створити число з ціною на одне ім'я
-//зробити з рядка масив
-//створити цикл який порахує кількість імен та помножить їх кількість на ціну імені
-//вивести результат в консоль
 
-function calculateEngravingPrice(message, pricePerWord) {
-const arrayMesage = message.split(" ")
+let longestWord;
+
+function findLongestWord(words) {
+   let wordsArray = words.split
+  for (let i = 0; i < wordsArray.lentgh; i++) {
+    if(wordsArray[i].length > longestWord.length){
+        longestWord = wordsArray[i]
+    }
+  }
+  return longestWord
+}
+
+console.log(findLongestWord("String Number Boolean"));
+
+
+
+
+
+
+
+function formatString(string) {
+    if (string.length < 40) {
+        console.log(string)
+    }
+    else { console.log(string.slice(39, 99999999999, "...")) }
 
 }
 
+formatString("Hello my names Anton,I am from Kiyv bla bla bla");
 
 
 
-calculateEngravingPrice('Anton Sasha Misha');
-calculateEngravingPrice(5);
 
-
-// Напиши функцію findLongestWord(string), яка приймає параметром довільний рядок (в рядку будуть тільки слова і прогалини) і повертає найдовше слово в цьому рядку.
-
-//Створити функцію
-//Створити рядок зі словами
-//Зробити з рядка масив
-//написати цикл який буде перераховувати числа
-//При знаходжені нового найдовшого числа заміняти минуле найдовше
-//Вивести результат в конслоль
-
-// function findLongestWord(string) {
-
-// }
-
-
-// findLongestWord("String Number Boolean")
-
-
-
-// // let formatsString;
-
-// // function formatString(string) {
-// //     if (formatsString.lenght < 40) {
-// //         console.log(formatsString)
-// //     }
-// //     else { console.log(formatsString.slice(39, 99999999999, "...")) }
-
-// // }
-
-
-
-// // formatsString = formatString("Hello my names Anton,I am from Kiyv bla bla bla");
 
 
