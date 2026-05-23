@@ -1,24 +1,25 @@
 
-const input = document.getElementById("inputText");
-const button = document.getElementById("myButton");
+
+// 1
+const button = document.querySelector("#myButton");
+const input = document.querySelector("#textInput");
 
 button.textContent = input.value;
 
+// 2
+const image = document.querySelector("#myImage");
 
-const image = document.getElementById("myImage");
+image.src = "image2.jpg";
 
-image.src =
-  "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg";
-
-
-const link = document.getElementById("myLink");
-const linkImage = document.getElementById("linkImage");
+// 3
+const link = document.querySelector("#myLink");
+const photo = document.querySelector("#photo");
 
 link.href = "https://youtube.com";
 
-linkImage.alt = "Красиве зображення природи";
+photo.alt = "Опис зображення";
 
-
+// 4
 const firstItem = document.querySelector("#myList li");
 
-firstItem.textContent = "Новий текст елемента списку";
+firstItem.textContent = "Новий текст";
